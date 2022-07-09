@@ -30,6 +30,16 @@ body {
 
 /* reset styles */
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 .link {
   text-decoration: none;
   color: currentColor;
@@ -37,9 +47,22 @@ body {
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* basy styles */
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
 
 .visually-hidden {
   position: absolute;
@@ -107,12 +130,32 @@ body {
 
 /* Header */
 
+.header-container {
+  display: flex;
+}
+
+.logo {
+  margin-right: 92px;
+}
+
+.hdr-nv-lst-mrgn {
+  margin-right: 330px;
+}
+
+.hdr-nv-itm {
+  margin-right: 50px;
+}
+.hdr-nv-itm: :last-child {
+  margin-right: 0;
+}
+
 .header-nav-list,
 .header-contacts-list {
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
+  display: flex;
 }
 
 .header-link-studio,
@@ -135,7 +178,6 @@ body {
 
 .sentence-section {
   background-color: var(--sctn-sntnc);
-  width: 1600px;
 }
 
 .sntns-hr {
