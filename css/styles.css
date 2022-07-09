@@ -88,6 +88,8 @@ p {
   color: var(--btn-txt-cl);
   background-color: var(--accent-txt-cl);
   cursor: pointer;
+  border-radius: 4px;
+  padding: 10px 32px;
 }
 
 .btn:hover,
@@ -132,21 +134,41 @@ p {
 
 .header-container {
   display: flex;
+  gap: 0;
+  align-items: center;
 }
 
-.logo {
+.header-nav {
+  margin-right: 331px;
+  gap: 0;
+}
+
+.header-nav-list {
+  align-items: center;
+}
+.header-link-logo-black {
   margin-right: 92px;
 }
 
-.hdr-nv-lst-mrgn {
-  margin-right: 330px;
-}
-
-.hdr-nv-itm {
+.header-link-std-fl {
   margin-right: 50px;
 }
-.hdr-nv-itm: :last-child {
-  margin-right: 0;
+
+.header-link-prtfl-fl {
+  margin-right: 50px;
+}
+
+.header-contacts-list {
+  gap: 0;
+}
+
+.header-link-ml-fl {
+  margin-right: 50px;
+}
+
+.header-link {
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 
 .header-nav-list,
@@ -189,13 +211,28 @@ p {
   color: var(--btn-txt-cl);
 }
 
-/* Особенности */
+/* Особенности Занятия */
+
+.features-occupation {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container-features-list {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 94px;
+}
+
+.container-features-item {
+  flex-basis: 270px;
+}
 
 .main-features-title {
-  /*font-weight: 700;*/
   font-size: 14px;
   line-height: calc(16 / 14);
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .main-features-text {
@@ -205,17 +242,37 @@ p {
   color: var(--hdr-cntcts-lst);
 }
 
-/* Занятия */
+.main-occupation-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.container-main-occupation-list {
+  display: flex;
+  gap: 30px;
+}
 
 .main-occupation-title {
-  /* font-weight: 700;*/
   font-size: 36px;
   line-height: calc(42 / 36);
 }
 
 /* Команда */
+
 .main-team {
   background-color: var(--btn-prtfl);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.main-team-title-head {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.container-main-team-list {
+  display: flex;
+  gap: 30px;
 }
 
 .main-team-title-head {
@@ -241,6 +298,9 @@ p {
 
 .footer {
   background-color: var(--sctn-sntnc);
+  margin-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-link-logo-white {
@@ -248,10 +308,15 @@ p {
   font-size: 26px;
   line-height: 31px;
   color: #ffffff;
+  margin-bottom: 20px;
 }
 
 .address {
   font-style: inherit;
+}
+
+.footer-address-list {
+  gap: 9px;
 }
 
 .item-light-location {
