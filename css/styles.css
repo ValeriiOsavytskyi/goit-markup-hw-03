@@ -8,7 +8,7 @@
   --main-txt-cl: #212121;
   --hdr-cntcts-lst: #757575;
   --accent-txt-cl: #2196f3;
-  --xx: #eeeeee;
+  --porfolio-border-img: #eeeeee;
   --logo-black: #000000;
   --btn-prtfl: #f5f4fa;
   --item-light: rgba(255, 255, 255, 0.6);
@@ -89,7 +89,6 @@ p {
   background-color: var(--accent-txt-cl);
   cursor: pointer;
   border-radius: 4px;
-  padding: 10px 32px;
 }
 
 .btn:hover,
@@ -136,6 +135,8 @@ p {
   display: flex;
   gap: 0;
   align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-nav {
@@ -200,6 +201,8 @@ p {
 
 .sentence-section {
   background-color: var(--sctn-sntnc);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .sntns-hr {
@@ -209,6 +212,12 @@ p {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--btn-txt-cl);
+  margin-bottom: 30px;
+}
+
+.btn-sentence-section {
+  display: block;
+  margin: 0 auto;
 }
 
 /* Особенности Занятия */
@@ -266,6 +275,8 @@ p {
 }
 
 .main-team-title-head {
+  font-size: 36px;
+  line-height: 42px;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -275,16 +286,22 @@ p {
   gap: 30px;
 }
 
-.main-team-title-head {
-  font-size: 36px;
-  line-height: 42px;
+.team-card-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-card-content {
   text-align: center;
+  padding: 30px;
 }
 
 .main-team-title {
   /*font-weight: 500;*/
   font-size: 16px;
   line-height: calc(19 / 16);
+  margin-bottom: 10px;
 }
 
 .main-team-text {
@@ -307,7 +324,7 @@ p {
   font-family: 'Raleway';
   font-size: 26px;
   line-height: 31px;
-  color: #ffffff;
+  color: var(btn-txt-cl);
   margin-bottom: 20px;
 }
 
@@ -337,7 +354,43 @@ p {
 
 /* Portfolio navigation */
 
+.container-portfolio {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
+/* Portfolio BTN */
+
+.container-portfolio-navigation-list {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.btn-portfolio {
+  border-radius: 4px;
+  padding: 6px 22px;
+}
+
 /* Portfolio */
+
+.container-portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/*
+.portfolio-item {
+  border: 1px solid var(--porfolio-border-img);
+  }
+  */
+
+.porfolio-div-img {
+}
+
+.porfolio-div-contents {
+}
 
 .portfolio-title {
   font-size: 18px;
