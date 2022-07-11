@@ -337,6 +337,7 @@ img {
   display: flex;
   gap: 8px;
   margin: auto;
+  margin-bottom: 50px;
 }
 
 .container-portfolio-navigation-list {
