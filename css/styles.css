@@ -47,7 +47,7 @@ p {
 
 .list {
   list-style: none;
-  padding: 0;
+  padding-left: 0;
   margin: 0;
 }
 
@@ -55,14 +55,8 @@ p {
 
 .container {
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-
-  /*----------------ВРЕМЕННЫЙ БЛОК, ДЛЯ  РАЗМЕТКИ-------------*/
-  /*outline: 2px solid red;
-  outline-offset: -2px;*/
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .visually-hidden {
@@ -85,6 +79,15 @@ img {
   height: auto;
 }
 
+address {
+  font-style: normal;
+}
+
+section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .btn {
   font-family: inherit;
   font-weight: 700;
@@ -97,7 +100,11 @@ img {
   cursor: pointer;
   border-radius: 4px;
   bottom: none;
-  border: var(--logo-black);
+  border: none;
+  padding: 10px 32px;
+
+  display: block;
+  margin: 0 auto;
 }
 
 .btn:hover,
@@ -117,6 +124,9 @@ img {
   background-color: var(--btn-prtfl);
   cursor: pointer;
   border: none;
+
+  padding: 6px 22px;
+  border-radius: 4px;
 }
 
 .btn-portfolio:hover,
@@ -128,68 +138,60 @@ img {
 .header-link-logo-black {
   font-family: 'Raleway';
   font-size: 26px;
-  line-height: 31px;
+  line-height: calc(31 / 26);
   color: var(--logo-black);
+  display: block;
 }
 
 .logo-blue {
   font-family: 'Raleway';
   font-size: 26px;
-  line-height: 31px;
+  line-height: calc(31 / 26);
   color: var(--accent-txt-cl);
 }
 
 /* Header */
 
-.header-container {
-  display: flex;
-  gap: 0;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+header {
   border-bottom: 1px solid var(--header-container-border);
 }
 
-.header-nav {
-  margin-right: 331px;
-  gap: 0;
+.header-container {
+  display: flex;
 }
 
-.header-nav-list {
-  align-items: center;
-}
 .header-link-logo-black {
-  margin-right: 92px;
+  margin-right: 93px;
 }
 
-.header-link-std-fl {
-  margin-right: 50px;
-}
-
-.header-link-prtfl-fl {
-  margin-right: 50px;
-}
-
-.header-contacts-list {
-  gap: 0;
-}
-
-.header-link-ml-fl {
-  margin-right: 50px;
-}
-
-.header-link {
-  padding-top: 35px;
-  padding-bottom: 35px;
+.header-nav {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
 }
 
 .header-nav-list,
 .header-contacts-list {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-nav-item {
+  margin-right: 50px;
+}
+
+.header-link,
+.header-link-contacts {
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-  display: flex;
+  cursor: pointer;
+}
+
+.header-link-contacts {
+  color: var(--hdr-cntcts-lst);
 }
 
 .header-link-studio,
@@ -199,13 +201,11 @@ img {
 
 .header-link:hover,
 .header-link:focus,
+.header-link-contacts:hover,
+.header-link-contacts:focus,
 .footer-link:hover,
 .footer-link:focus {
   color: var(--accent-txt-cl);
-}
-
-.header-contacts-list {
-  color: var(--hdr-cntcts-lst);
 }
 
 /* Эффективные решения */
@@ -217,31 +217,23 @@ img {
 }
 
 .sntns-hr {
+  font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--btn-txt-cl);
+  width: 696px;
+  margin: 0 auto;
   margin-bottom: 30px;
 }
 
-.btn-sentence-section {
-  display: block;
-  margin: 0 auto;
-}
-
-/* Особенности Занятия */
-
-.features-occupation {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+/*---------- Особенности-------------------*/
 
 .container-features-list {
   display: flex;
   gap: 30px;
-  margin-bottom: 94px;
 }
 
 .container-features-item {
@@ -249,18 +241,17 @@ img {
 }
 
 .main-features-title {
-  font-size: 14px;
   line-height: calc(16 / 14);
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 
 .main-features-text {
-  font-weight: 400;
-  font-size: 14px;
   line-height: calc(24 / 14);
   color: var(--hdr-cntcts-lst);
 }
+
+/*------------------------- Занятия -----------------*/
 
 .main-occupation-title {
   text-align: center;
@@ -281,8 +272,6 @@ img {
 
 .main-team {
   background-color: var(--btn-prtfl);
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .main-team-title-head {
@@ -301,22 +290,21 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  background-color: var(--btn-txt-cl);
 }
 
 .team-card-content {
   text-align: center;
-  padding: 30px;
+  padding: 30px 0;
 }
 
 .main-team-title {
-  /*font-weight: 500;*/
   font-size: 16px;
   line-height: calc(19 / 16);
   margin-bottom: 10px;
 }
 
 .main-team-text {
-  /*font-weight: 400;*/
   font-size: 16px;
   line-height: calc(19 / 16);
   color: var(--hdr-cntcts-lst);
@@ -326,26 +314,17 @@ img {
 
 /* Portfolio navigation */
 
-.container-portfolio {
-  margin-top: 94px;
-  margin-bottom: 94px;
+.section-portfolio {
+  padding: 94px 0;
 }
 
 /* Portfolio BTN */
 
 .container-portfolio-navigation-list {
   display: flex;
+  justify-content: center;
   gap: 8px;
-  margin: auto;
   margin-bottom: 50px;
-}
-
-.container-portfolio-navigation-list {
-}
-
-.btn-portfolio {
-  border-radius: 4px;
-  padding: 6px 22px;
 }
 
 /* Portfolio */
@@ -371,6 +350,8 @@ img {
 .porfolio-div-contents {
   border: 1px solid var(--porfolio-border-img);
   padding: 20px 24px;
+  border-top: none;
+  margin: 4px;
 }
 
 .portfolio-title {
@@ -389,17 +370,8 @@ img {
 
 .footer {
   background-color: var(--sctn-sntnc);
-  margin-bottom: 60px;
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.footer-link-logo-white {
-  font-family: 'Raleway';
-  font-size: 26px;
-  line-height: 31px;
-  color: var(--btn-txt-cl);
-  margin-bottom: 20px;
 }
 
 .address {
@@ -410,16 +382,25 @@ img {
   gap: 9px;
 }
 
-.item-light-location {
-  font-weight: 400;
-  font-size: 14px;
+.footer-link-logo-white {
+  display: block;
+  font-family: 'Raleway';
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  color: var(--btn-txt-cl);
+  margin-bottom: 20px;
+}
+
+.footer-link-location {
   line-height: calc(24 / 14);
   color: var(--btn-txt-cl);
 }
 
-.item-light {
-  font-weight: 400;
-  font-size: 14px;
+.footer-link {
   line-height: calc(24 / 14);
   color: var(--item-light);
+}
+
+.footer-address-ml-item {
+  margin-bottom: 9px;
 }
