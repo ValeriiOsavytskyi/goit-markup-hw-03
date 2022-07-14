@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio Portfolio</title>
 
-    <!--Font start-->
+    <!-----------------------  Font ----------------------------------------->
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <!--Font end-->
 
-    <!--Normalize start-->
+    <!------------------------  Normalize ------------------------------------->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -23,17 +23,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!--Normalize end-->
 
-    <!--Custom styles start-->
+    <!------------------------  Custom styles --------------------------------->
+
     <link rel="stylesheet" href="./css/styles.css" />
-    <!--Custom styles end-->
   </head>
 
   <body>
-    <!--header-->
+    <!-------------------  header  ----------------------------------------------->
 
-    <header>
+    <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
           <a class="link header-link-logo-black" href="./index.html"
@@ -64,10 +63,10 @@
       </div>
     </header>
 
-    <!--Portfolio navigation-->
+    <!---------------------  Portfolio navigation  ------------------------------->
 
     <main>
-      <section class="section-portfolio">
+      <section class="container consection-portfolio">
         <!------------------------Portfolio BTN------------------------------->
 
         <h1 class="visually-hidden">Portfolio</h1>
@@ -90,7 +89,7 @@
           </li>
         </ul>
 
-        <!--Portfolio-->
+        <!--------------  Portfolio  -------------------------------------------------->
 
         <ul class="list container-portfolio-list">
           <li class="portfolio-item">
@@ -166,30 +165,32 @@
 
     <!------------------------Footer------------------------------------>
 
-    <footer class="footer container">
-      <a class="link footer-link-logo-white" href="./index.html"
-        ><span class="logo-blue">Web</span>Studio</a
-      >
+    <footer class="footer">
+      <div class="container">
+        <a class="link footer-link-logo-white" href="./index.html"
+          ><span class="logo-blue">Web</span>Studio</a
+        >
 
-      <address class="address">
-        <ul class="list footer-address-list">
-          <li class="footer-address-location-item">
-            <a
-              class="link footer-link-location"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://goo.gl/maps/SqduPQ5yzWcNrS9j9"
-              >г. Киев, пр-т Леси Украинки, 26</a
-            >
-          </li>
-          <li class="footer-address-ml-item">
-            <a class="link footer-link" href="mailto:info@example.com">info@example.com</a>
-          </li>
-          <li class="footer-address-phn-item">
-            <a class="link footer-link" href="tel:+380991111111">+38 099 111 11 11</a>
-          </li>
-        </ul>
-      </address>
+        <address class="address">
+          <ul class="list footer-address-list">
+            <li class="footer-address-location-item">
+              <a
+                class="link footer-link-location"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://goo.gl/maps/SqduPQ5yzWcNrS9j9"
+                >г. Киев, пр-т Леси Украинки, 26</a
+              >
+            </li>
+            <li class="footer-address-ml-item">
+              <a class="link footer-link" href="mailto:info@example.com">info@example.com</a>
+            </li>
+            <li class="footer-address-phn-item">
+              <a class="link footer-link" href="tel:+380991111111">+38 099 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>

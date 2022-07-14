@@ -1,9 +1,9 @@
 :root {
-  /* fonts */
+  /*  ------------------  fonts  -------------------------- */
   --main-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
 
-  /* text colors */
+  /*  ------------------- text colors  ------------------ */
   --btn-txt-cl: #ffffff;
   --main-txt-cl: #212121;
   --hdr-cntcts-lst: #757575;
@@ -16,9 +16,7 @@
   --header-container-border: #ececec;
   --accent-txt-hvr-fcs-cl: #188ce8;
 
-  /* bg colors */
-
-  /* others */
+  /* ----------------- others  --------------------------- */
 }
 body {
   font-family: var(--main-font);
@@ -28,7 +26,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-/*-------------------- reset styles--------------------------- */
+/*-------------------- reset styles --------------------------- */
 
 h1,
 h2,
@@ -51,12 +49,14 @@ p {
   margin: 0;
 }
 
-/*------------------ basy styles------------------------------ */
+/*----------------------- basy styles  ---------------------------- */
 
 .container {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+  outline-style: 2px dashed red;
+  outline-offset: ;
 }
 
 .visually-hidden {
@@ -150,9 +150,9 @@ section {
   color: var(--accent-txt-cl);
 }
 
-/* Header */
+/* -------------------  Header  ------------------------ */
 
-header {
+.header {
   border-bottom: 1px solid var(--header-container-border);
 }
 
@@ -160,14 +160,16 @@ header {
   display: flex;
 }
 
-.header-link-logo-black {
-  margin-right: 93px;
-}
-
 .header-nav {
   display: flex;
   align-items: center;
   margin-right: auto;
+}
+
+.header-link-logo-black {
+  display: block;
+  margin-right: 93px;
+  padding: 0 auto;
 }
 
 .header-nav-list,
@@ -208,7 +210,7 @@ header {
   color: var(--accent-txt-cl);
 }
 
-/* Эффективные решения */
+/*  ---------------- Эффективные решения  ---------------- */
 
 .sentence-section {
   background-color: var(--sctn-sntnc);
@@ -229,7 +231,7 @@ header {
   margin-bottom: 30px;
 }
 
-/*---------- Особенности-------------------*/
+/*---------------------- Особенности  -------------------*/
 
 .container-features-list {
   display: flex;
@@ -253,6 +255,10 @@ header {
 
 /*------------------------- Занятия -----------------*/
 
+.section-occupation {
+  margin-bottom: 94px;
+}
+
 .main-occupation-title {
   text-align: center;
   margin-bottom: 50px;
@@ -268,7 +274,7 @@ header {
   line-height: calc(42 / 36);
 }
 
-/* Команда */
+/*  -------------------- Команда --------------------*/
 
 .main-team {
   background-color: var(--btn-prtfl);
@@ -310,15 +316,15 @@ header {
   color: var(--hdr-cntcts-lst);
 }
 
-/* PORFOLIO page * /
+/*  ----------------- PORFOLIO page  ------------------------- * /
 
-/* Portfolio navigation */
+/*  -------------- Portfolio navigation  ------------------ */
 
 .section-portfolio {
   padding: 94px 0;
 }
 
-/* Portfolio BTN */
+/*  ----------------- Portfolio BTN  ----------------------- */
 
 .container-portfolio-navigation-list {
   display: flex;
@@ -327,19 +333,7 @@ header {
   margin-bottom: 50px;
 }
 
-/* Portfolio */
-
-.container-portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
-/*.container-portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}*/
+/* ---------------- Portfolio ------------------------------- */
 
 .container-portfolio-list {
   display: flex;
