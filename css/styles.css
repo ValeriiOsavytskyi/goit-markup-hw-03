@@ -55,7 +55,7 @@ p {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
-  outline-style: 2px dashed red;
+  outline: 2px dashed red;
   outline-offset: -2px;
 }
 
@@ -243,6 +243,7 @@ address {
 }
 
 .main-features-title {
+  font-size: 14px;
   line-height: calc(16 / 14);
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -257,6 +258,7 @@ address {
 
 .section-occupation {
   margin-bottom: 94px;
+  padding-top: 0%;
 }
 
 .main-occupation-title {
@@ -345,13 +347,13 @@ address {
   border: 1px solid var(--porfolio-border-img);
   padding: 20px 24px;
   border-top: none;
-  margin: 4px;
 }
 
 .portfolio-title {
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 
 .portfolio-text {
@@ -368,14 +370,6 @@ address {
   padding-bottom: 60px;
 }
 
-.address {
-  font-style: inherit;
-}
-
-.footer-address-list {
-  gap: 9px;
-}
-
 .footer-link-logo-white {
   display: block;
   font-family: 'Raleway';
@@ -383,6 +377,10 @@ address {
   line-height: calc(31 / 26);
   color: var(--btn-txt-cl);
   margin-bottom: 20px;
+}
+
+.address {
+  font-style: inherit;
 }
 
 .footer-link-location {
@@ -395,6 +393,10 @@ address {
   color: var(--item-light);
 }
 
-.footer-address-ml-item {
+.footer-item {
   margin-bottom: 9px;
+}
+
+.footer-item:last-child {
+  margin-bottom: 0px;
 }
