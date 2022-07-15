@@ -56,7 +56,7 @@ p {
   padding: 0 15px;
   margin: 0 auto;
   outline-style: 2px dashed red;
-  outline-offset: ;
+  outline-offset: -2px;
 }
 
 .visually-hidden {
@@ -83,7 +83,7 @@ address {
   font-style: normal;
 }
 
-section {
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
